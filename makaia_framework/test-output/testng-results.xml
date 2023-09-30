@@ -1,407 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="12" total="20" passed="5" failed="3" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-30T07:12:08 CEST" name="Suite" finished-at="2023-09-30T07:14:22 CEST" duration-ms="133990">
+  <suite started-at="2023-09-30T10:07:26 CEST" name="Suite" finished-at="2023-09-30T10:07:50 CEST" duration-ms="23221">
     <groups>
     </groups>
-    <test started-at="2023-09-30T07:12:08 CEST" name="chrome" finished-at="2023-09-30T07:14:21 CEST" duration-ms="132780">
-      <class name="com.pos.testcases.CreateNewProduct">
-        <test-method is-config="true" signature="setValues()[pri:0, instance:com.pos.testcases.CreateNewProduct@16eb3ea3]" started-at="2023-09-30T07:12:08 CEST" name="setValues" finished-at="2023-09-30T07:12:08 CEST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setValues -->
-        <test-method is-config="true" signature="startTestCase()[pri:0, instance:com.pos.testcases.CreateNewProduct@16eb3ea3]" started-at="2023-09-30T07:12:39 CEST" name="startTestCase" finished-at="2023-09-30T07:12:39 CEST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startTestCase -->
-        <test-method is-config="true" signature="preCondition(java.lang.String)[pri:0, instance:com.pos.testcases.CreateNewProduct@16eb3ea3]" started-at="2023-09-30T07:12:39 CEST" name="preCondition" finished-at="2023-09-30T07:14:00 CEST" duration-ms="80796" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- preCondition -->
-        <test-method signature="runLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.pos.testcases.CreateNewProduct@16eb3ea3]" started-at="2023-09-30T07:14:00 CEST" name="runLogin" data-provider="fetchData" finished-at="2023-09-30T07:14:19 CEST" duration-ms="19336" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[8526544557]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Playwright]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Training]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[10000]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[5000]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runLogin -->
-        <test-method is-config="true" signature="postCondition()[pri:0, instance:com.pos.testcases.CreateNewProduct@16eb3ea3]" started-at="2023-09-30T07:14:19 CEST" name="postCondition" finished-at="2023-09-30T07:14:19 CEST" duration-ms="152" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- postCondition -->
-      </class> <!-- com.pos.testcases.CreateNewProduct -->
-      <class name="com.pos.testcases.EditVendor">
-        <test-method is-config="true" signature="setValues()[pri:0, instance:com.pos.testcases.EditVendor@6caf0677]" started-at="2023-09-30T07:12:08 CEST" name="setValues" finished-at="2023-09-30T07:12:08 CEST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setValues -->
-        <test-method is-config="true" signature="startTestCase()[pri:0, instance:com.pos.testcases.EditVendor@6caf0677]" started-at="2023-09-30T07:12:08 CEST" name="startTestCase" finished-at="2023-09-30T07:12:08 CEST" duration-ms="21" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startTestCase -->
-        <test-method is-config="true" signature="preCondition(java.lang.String)[pri:0, instance:com.pos.testcases.EditVendor@6caf0677]" started-at="2023-09-30T07:12:10 CEST" name="preCondition" finished-at="2023-09-30T07:12:17 CEST" duration-ms="7297" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- preCondition -->
-        <test-method signature="runLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.pos.testcases.EditVendor@6caf0677]" started-at="2023-09-30T07:12:17 CEST" name="runLogin" data-provider="fetchData" finished-at="2023-09-30T07:12:38 CEST" duration-ms="21287" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[8220316109]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Kumar]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[The vendor you entered was saved successfully.]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Kumar]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runLogin -->
-        <test-method is-config="true" signature="postCondition()[pri:0, instance:com.pos.testcases.EditVendor@6caf0677]" started-at="2023-09-30T07:12:38 CEST" name="postCondition" finished-at="2023-09-30T07:12:39 CEST" duration-ms="145" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- postCondition -->
-      </class> <!-- com.pos.testcases.EditVendor -->
-      <class name="com.pos.testcases.DeleteVendor">
-        <test-method is-config="true" signature="setValues()[pri:0, instance:com.pos.testcases.DeleteVendor@413d1baf]" started-at="2023-09-30T07:12:08 CEST" name="setValues" finished-at="2023-09-30T07:12:08 CEST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setValues -->
-        <test-method is-config="true" signature="startTestCase()[pri:0, instance:com.pos.testcases.DeleteVendor@413d1baf]" started-at="2023-09-30T07:12:34 CEST" name="startTestCase" finished-at="2023-09-30T07:12:34 CEST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startTestCase -->
-        <test-method is-config="true" signature="preCondition(java.lang.String)[pri:0, instance:com.pos.testcases.DeleteVendor@413d1baf]" started-at="2023-09-30T07:12:34 CEST" name="preCondition" finished-at="2023-09-30T07:13:59 CEST" duration-ms="85293" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- preCondition -->
-        <test-method signature="runLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.pos.testcases.DeleteVendor@413d1baf]" started-at="2023-09-30T07:13:59 CEST" name="runLogin" data-provider="fetchData" finished-at="2023-09-30T07:14:20 CEST" duration-ms="20659" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[8220316109]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Are you sure wan't to delete the selected item]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Deleted successfully.]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runLogin -->
-        <test-method is-config="true" signature="postCondition()[pri:0, instance:com.pos.testcases.DeleteVendor@413d1baf]" started-at="2023-09-30T07:14:20 CEST" name="postCondition" finished-at="2023-09-30T07:14:21 CEST" duration-ms="374" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- postCondition -->
-      </class> <!-- com.pos.testcases.DeleteVendor -->
-      <class name="com.pos.testcases.CreateNewVendor">
-        <test-method is-config="true" signature="setValues()[pri:0, instance:com.pos.testcases.CreateNewVendor@8458f04]" started-at="2023-09-30T07:12:08 CEST" name="setValues" finished-at="2023-09-30T07:12:08 CEST" duration-ms="4" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setValues -->
-        <test-method is-config="true" signature="startTestCase()[pri:0, instance:com.pos.testcases.CreateNewVendor@8458f04]" started-at="2023-09-30T07:12:08 CEST" name="startTestCase" finished-at="2023-09-30T07:12:08 CEST" duration-ms="23" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startTestCase -->
-        <test-method is-config="true" signature="preCondition(java.lang.String)[pri:0, instance:com.pos.testcases.CreateNewVendor@8458f04]" started-at="2023-09-30T07:12:10 CEST" name="preCondition" finished-at="2023-09-30T07:12:17 CEST" duration-ms="7265" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- preCondition -->
-        <test-method signature="runLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.pos.testcases.CreateNewVendor@8458f04]" started-at="2023-09-30T07:12:17 CEST" name="runLogin" data-provider="fetchData" finished-at="2023-09-30T07:12:34 CEST" duration-ms="16776" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[8220316109]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Vinoth]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Selenium]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Chennai]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[8220316109]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[vinod@gmail.com]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runLogin -->
-        <test-method is-config="true" signature="postCondition()[pri:0, instance:com.pos.testcases.CreateNewVendor@8458f04]" started-at="2023-09-30T07:12:34 CEST" name="postCondition" finished-at="2023-09-30T07:12:34 CEST" duration-ms="148" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- postCondition -->
-      </class> <!-- com.pos.testcases.CreateNewVendor -->
-    </test> <!-- chrome -->
-    <test started-at="2023-09-30T07:12:08 CEST" name="firefox" finished-at="2023-09-30T07:14:22 CEST" duration-ms="133990">
+    <test started-at="2023-09-30T10:07:26 CEST" name="Test" finished-at="2023-09-30T10:07:50 CEST" duration-ms="23221">
       <class name="com.pos.testcases.DeleteCustomer">
-        <test-method is-config="true" signature="setValues()[pri:0, instance:com.pos.testcases.DeleteCustomer@548a24a]" started-at="2023-09-30T07:12:08 CEST" name="setValues" finished-at="2023-09-30T07:12:08 CEST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setValues -->
-        <test-method is-config="true" signature="startTestCase()[pri:0, instance:com.pos.testcases.DeleteCustomer@548a24a]" started-at="2023-09-30T07:12:08 CEST" name="startTestCase" finished-at="2023-09-30T07:12:08 CEST" duration-ms="19" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startTestCase -->
-        <test-method is-config="true" signature="preCondition(java.lang.String)[pri:0, instance:com.pos.testcases.DeleteCustomer@548a24a]" started-at="2023-09-30T07:12:10 CEST" name="preCondition" finished-at="2023-09-30T07:12:21 CEST" duration-ms="11027" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- preCondition -->
-        <test-method signature="runLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.pos.testcases.DeleteCustomer@548a24a]" started-at="2023-09-30T07:12:21 CEST" name="runLogin" data-provider="fetchData" finished-at="2023-09-30T07:12:37 CEST" duration-ms="15819" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[9976749433]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Are you sure wan't to delete the selected item]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Deleted successfully.]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.RuntimeException">
-            <message>
-              <![CDATA[See the reporter for details.]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException: See the reporter for details.
-at com.framework.utils.Reporter.reportStep(Reporter.java:101)
-at com.framework.utils.Reporter.reportStep(Reporter.java:116)
-at com.framework.selenium.api.base.SeleniumBase.locateElement(SeleniumBase.java:657)
-at com.pos.pages.CustomersPage.clickDeleteIcon(CustomersPage.java:39)
-at com.pos.testcases.DeleteCustomer.runLogin(DeleteCustomer.java:27)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runLogin -->
-        <test-method is-config="true" signature="postCondition()[pri:0, instance:com.pos.testcases.DeleteCustomer@548a24a]" started-at="2023-09-30T07:12:37 CEST" name="postCondition" finished-at="2023-09-30T07:12:38 CEST" duration-ms="1440" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- postCondition -->
-      </class> <!-- com.pos.testcases.DeleteCustomer -->
-      <class name="com.pos.testcases.EditVendor">
-        <test-method is-config="true" signature="setValues()[pri:0, instance:com.pos.testcases.EditVendor@7fd50002]" started-at="2023-09-30T07:12:08 CEST" name="setValues" finished-at="2023-09-30T07:12:08 CEST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setValues -->
-        <test-method is-config="true" signature="startTestCase()[pri:0, instance:com.pos.testcases.EditVendor@7fd50002]" started-at="2023-09-30T07:12:38 CEST" name="startTestCase" finished-at="2023-09-30T07:12:38 CEST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startTestCase -->
-        <test-method is-config="true" signature="preCondition(java.lang.String)[pri:0, instance:com.pos.testcases.EditVendor@7fd50002]" started-at="2023-09-30T07:12:39 CEST" name="preCondition" finished-at="2023-09-30T07:14:04 CEST" duration-ms="85543" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- preCondition -->
-        <test-method signature="runLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.pos.testcases.EditVendor@7fd50002]" started-at="2023-09-30T07:14:04 CEST" name="runLogin" data-provider="fetchData" finished-at="2023-09-30T07:14:20 CEST" duration-ms="16303" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[8220316109]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Kumar]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[The vendor you entered was saved successfully.]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Kumar]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.RuntimeException">
-            <message>
-              <![CDATA[See the reporter for details.]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException: See the reporter for details.
-at com.framework.utils.Reporter.reportStep(Reporter.java:101)
-at com.framework.utils.Reporter.reportStep(Reporter.java:116)
-at com.framework.selenium.api.base.SeleniumBase.locateElement(SeleniumBase.java:657)
-at com.pos.pages.VendorsPage.clickVendorEditIcon(VendorsPage.java:30)
-at com.pos.testcases.EditVendor.runLogin(EditVendor.java:27)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runLogin -->
-        <test-method is-config="true" signature="postCondition()[pri:0, instance:com.pos.testcases.EditVendor@7fd50002]" started-at="2023-09-30T07:14:20 CEST" name="postCondition" finished-at="2023-09-30T07:14:21 CEST" duration-ms="1047" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- postCondition -->
-      </class> <!-- com.pos.testcases.EditVendor -->
-      <class name="com.pos.testcases.EditCustomer">
-        <test-method is-config="true" signature="startReport()[pri:0, instance:com.pos.testcases.EditCustomer@1040be71]" started-at="2023-09-30T07:12:07 CEST" name="startReport" finished-at="2023-09-30T07:12:08 CEST" duration-ms="506" status="PASS">
+        <test-method is-config="true" signature="startReport()[pri:0, instance:com.pos.testcases.DeleteCustomer@909217e]" started-at="2023-09-30T10:07:26 CEST" name="startReport" finished-at="2023-09-30T10:07:26 CEST" duration-ms="204" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startReport -->
-        <test-method is-config="true" signature="setValues()[pri:0, instance:com.pos.testcases.EditCustomer@1040be71]" started-at="2023-09-30T07:12:08 CEST" name="setValues" finished-at="2023-09-30T07:12:08 CEST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setValues()[pri:0, instance:com.pos.testcases.DeleteCustomer@909217e]" started-at="2023-09-30T10:07:26 CEST" name="setValues" finished-at="2023-09-30T10:07:26 CEST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setValues -->
-        <test-method is-config="true" signature="startTestCase()[pri:0, instance:com.pos.testcases.EditCustomer@1040be71]" started-at="2023-09-30T07:12:08 CEST" name="startTestCase" finished-at="2023-09-30T07:12:08 CEST" duration-ms="26" status="PASS">
+        <test-method is-config="true" signature="startTestCase()[pri:0, instance:com.pos.testcases.DeleteCustomer@909217e]" started-at="2023-09-30T10:07:26 CEST" name="startTestCase" finished-at="2023-09-30T10:07:26 CEST" duration-ms="8" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTestCase -->
-        <test-method is-config="true" signature="preCondition(java.lang.String)[pri:0, instance:com.pos.testcases.EditCustomer@1040be71]" started-at="2023-09-30T07:12:10 CEST" name="preCondition" finished-at="2023-09-30T07:12:21 CEST" duration-ms="10781" status="PASS">
+        <test-method is-config="true" signature="preCondition(java.lang.String)[pri:0, instance:com.pos.testcases.DeleteCustomer@909217e]" started-at="2023-09-30T10:07:28 CEST" name="preCondition" finished-at="2023-09-30T10:07:30 CEST" duration-ms="2422" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[firefox]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- preCondition -->
-        <test-method signature="runLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.pos.testcases.EditCustomer@1040be71]" started-at="2023-09-30T07:12:21 CEST" name="runLogin" data-provider="fetchData" finished-at="2023-09-30T07:12:37 CEST" duration-ms="16441" status="FAIL">
+        <test-method signature="runLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.pos.testcases.DeleteCustomer@909217e]" started-at="2023-09-30T10:07:30 CEST" name="runLogin" data-provider="fetchData" finished-at="2023-09-30T10:07:50 CEST" duration-ms="19524" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -410,122 +39,27 @@ at java.base/java.lang.Thread.run(Thread.java:833)
             </param>
             <param index="1">
               <value>
-                <![CDATA[Raman]]>
+                <![CDATA[Are you sure wan't to delete the selected item]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[The customer you entered was saved successfully.]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Raman]]>
+                <![CDATA[Deleted successfully.]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.RuntimeException">
-            <message>
-              <![CDATA[See the reporter for details.]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException: See the reporter for details.
-at com.framework.utils.Reporter.reportStep(Reporter.java:101)
-at com.framework.utils.Reporter.reportStep(Reporter.java:116)
-at com.framework.selenium.api.base.SeleniumBase.locateElement(SeleniumBase.java:657)
-at com.pos.pages.CustomersPage.clickEditIcon(CustomersPage.java:29)
-at com.pos.testcases.EditCustomer.runLogin(EditCustomer.java:27)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runLogin -->
-        <test-method is-config="true" signature="postCondition()[pri:0, instance:com.pos.testcases.EditCustomer@1040be71]" started-at="2023-09-30T07:12:37 CEST" name="postCondition" finished-at="2023-09-30T07:12:38 CEST" duration-ms="1369" status="PASS">
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:com.pos.testcases.DeleteCustomer@909217e]" started-at="2023-09-30T10:07:50 CEST" name="postCondition" finished-at="2023-09-30T10:07:50 CEST" duration-ms="137" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postCondition -->
-        <test-method is-config="true" signature="endResult()[pri:0, instance:com.pos.testcases.EditCustomer@1040be71]" started-at="2023-09-30T07:14:22 CEST" name="endResult" finished-at="2023-09-30T07:14:22 CEST" duration-ms="377" status="PASS">
+        <test-method is-config="true" signature="endResult()[pri:0, instance:com.pos.testcases.DeleteCustomer@909217e]" started-at="2023-09-30T10:07:50 CEST" name="endResult" finished-at="2023-09-30T10:07:50 CEST" duration-ms="281" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endResult -->
-      </class> <!-- com.pos.testcases.EditCustomer -->
-      <class name="com.pos.testcases.CreateNewVendor">
-        <test-method is-config="true" signature="setValues()[pri:0, instance:com.pos.testcases.CreateNewVendor@433defed]" started-at="2023-09-30T07:12:08 CEST" name="setValues" finished-at="2023-09-30T07:12:08 CEST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setValues -->
-        <test-method is-config="true" signature="startTestCase()[pri:0, instance:com.pos.testcases.CreateNewVendor@433defed]" started-at="2023-09-30T07:12:38 CEST" name="startTestCase" finished-at="2023-09-30T07:12:38 CEST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startTestCase -->
-        <test-method is-config="true" signature="preCondition(java.lang.String)[pri:0, instance:com.pos.testcases.CreateNewVendor@433defed]" started-at="2023-09-30T07:12:38 CEST" name="preCondition" finished-at="2023-09-30T07:14:04 CEST" duration-ms="85714" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- preCondition -->
-        <test-method signature="runLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.pos.testcases.CreateNewVendor@433defed]" started-at="2023-09-30T07:14:04 CEST" name="runLogin" data-provider="fetchData" finished-at="2023-09-30T07:14:21 CEST" duration-ms="16747" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[8220316109]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Vinoth]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Selenium]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Chennai]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[8220316109]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[vinod@gmail.com]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runLogin -->
-        <test-method is-config="true" signature="postCondition()[pri:0, instance:com.pos.testcases.CreateNewVendor@433defed]" started-at="2023-09-30T07:14:21 CEST" name="postCondition" finished-at="2023-09-30T07:14:22 CEST" duration-ms="979" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- postCondition -->
-      </class> <!-- com.pos.testcases.CreateNewVendor -->
-    </test> <!-- firefox -->
+      </class> <!-- com.pos.testcases.DeleteCustomer -->
+    </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
