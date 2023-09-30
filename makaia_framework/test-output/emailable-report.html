@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">chrome</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">4</td><td class="num">116,240</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">firefox</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">4</td><td class="num">119,681</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">0</th><th class="num">0</th><th class="num">0</th><th class="num attn">8</th><th class="num">235,921</th><th colspan="2"></th></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">chrome &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.pos.testcases.CreateNewProduct</td><td><a href="#m0">runLogin</a></td><td rowspan="1">1695998261281</td><td rowspan="1">10390</td></tr><tr class="failedodd"><td rowspan="1">com.pos.testcases.CreateNewVendor</td><td><a href="#m1">runLogin</a></td><td rowspan="1">1695998162781</td><td rowspan="1">10337</td></tr><tr class="failedeven"><td rowspan="1">com.pos.testcases.DeleteVendor</td><td><a href="#m2">runLogin</a></td><td rowspan="1">1695998261119</td><td rowspan="1">10325</td></tr><tr class="failedodd"><td rowspan="1">com.pos.testcases.EditVendor</td><td><a href="#m3">runLogin</a></td><td rowspan="1">1695998162816</td><td rowspan="1">10505</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">firefox &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.pos.testcases.CreateNewVendor</td><td><a href="#m4">runLogin</a></td><td rowspan="1">1695998263910</td><td rowspan="1">10236</td></tr><tr class="failedodd"><td rowspan="1">com.pos.testcases.DeleteCustomer</td><td><a href="#m5">runLogin</a></td><td rowspan="1">1695998165614</td><td rowspan="1">10222</td></tr><tr class="failedeven"><td rowspan="1">com.pos.testcases.EditCustomer</td><td><a href="#m6">runLogin</a></td><td rowspan="1">1695998165779</td><td rowspan="1">10249</td></tr><tr class="failedodd"><td rowspan="1">com.pos.testcases.EditVendor</td><td><a href="#m7">runLogin</a></td><td rowspan="1">1695998264231</td><td rowspan="1">10245</td></tr></tbody>
+</table>
+<h2>chrome</h2><h3 id="m0">com.pos.testcases.CreateNewProduct#runLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>8526544557</td><td>Playwright</td><td>Training</td><td>10000</td><td>5000</td></tr><tr><th colspan="5">Exception</th></tr><tr><td colspan="5"><div class="stacktrace">java.lang.RuntimeException: See the reporter for details.
+	at com.framework.utils.Reporter.reportStep(Reporter.java:101)
+	at com.framework.utils.Reporter.reportStep(Reporter.java:116)
+	at com.framework.selenium.api.base.SeleniumBase.locateElement(SeleniumBase.java:657)
+	at com.pos.pages.LoginPage.enterUserName(LoginPage.java:9)
+	at com.pos.pages.LoginPage.login(LoginPage.java:27)
+	at com.pos.testcases.CreateNewProduct.runLogin(CreateNewProduct.java:25)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 12 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.pos.testcases.CreateNewVendor#runLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th></tr><tr class="param stripe"><td>8220316109</td><td>Vinoth</td><td>Selenium</td><td>Chennai</td><td>8220316109</td><td>vinod@gmail.com</td></tr><tr><th colspan="6">Exception</th></tr><tr><td colspan="6"><div class="stacktrace">java.lang.RuntimeException: See the reporter for details.
+	at com.framework.utils.Reporter.reportStep(Reporter.java:101)
+	at com.framework.utils.Reporter.reportStep(Reporter.java:116)
+	at com.framework.selenium.api.base.SeleniumBase.locateElement(SeleniumBase.java:657)
+	at com.pos.pages.LoginPage.enterUserName(LoginPage.java:9)
+	at com.pos.pages.LoginPage.login(LoginPage.java:27)
+	at com.pos.testcases.CreateNewVendor.runLogin(CreateNewVendor.java:25)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 12 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.pos.testcases.DeleteVendor#runLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>8220316109</td><td>Are you sure wan&apos;t to delete the selected item</td><td>Deleted successfully.</td></tr><tr><th colspan="3">Exception</th></tr><tr><td colspan="3"><div class="stacktrace">java.lang.RuntimeException: See the reporter for details.
+	at com.framework.utils.Reporter.reportStep(Reporter.java:101)
+	at com.framework.utils.Reporter.reportStep(Reporter.java:116)
+	at com.framework.selenium.api.base.SeleniumBase.locateElement(SeleniumBase.java:657)
+	at com.pos.pages.LoginPage.enterUserName(LoginPage.java:9)
+	at com.pos.pages.LoginPage.login(LoginPage.java:27)
+	at com.pos.testcases.DeleteVendor.runLogin(DeleteVendor.java:26)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 12 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.pos.testcases.EditVendor#runLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>8220316109</td><td>Kumar</td><td>The vendor you entered was saved successfully.</td><td>Kumar</td></tr><tr><th colspan="4">Exception</th></tr><tr><td colspan="4"><div class="stacktrace">java.lang.RuntimeException: See the reporter for details.
+	at com.framework.utils.Reporter.reportStep(Reporter.java:101)
+	at com.framework.utils.Reporter.reportStep(Reporter.java:116)
+	at com.framework.selenium.api.base.SeleniumBase.locateElement(SeleniumBase.java:657)
+	at com.pos.pages.LoginPage.enterUserName(LoginPage.java:9)
+	at com.pos.pages.LoginPage.login(LoginPage.java:27)
+	at com.pos.testcases.EditVendor.runLogin(EditVendor.java:24)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 12 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>firefox</h2><h3 id="m4">com.pos.testcases.CreateNewVendor#runLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th></tr><tr class="param stripe"><td>8220316109</td><td>Vinoth</td><td>Selenium</td><td>Chennai</td><td>8220316109</td><td>vinod@gmail.com</td></tr><tr><th colspan="6">Exception</th></tr><tr><td colspan="6"><div class="stacktrace">java.lang.RuntimeException: See the reporter for details.
+	at com.framework.utils.Reporter.reportStep(Reporter.java:101)
+	at com.framework.utils.Reporter.reportStep(Reporter.java:116)
+	at com.framework.selenium.api.base.SeleniumBase.locateElement(SeleniumBase.java:657)
+	at com.pos.pages.LoginPage.enterUserName(LoginPage.java:9)
+	at com.pos.pages.LoginPage.login(LoginPage.java:27)
+	at com.pos.testcases.CreateNewVendor.runLogin(CreateNewVendor.java:25)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 12 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.pos.testcases.DeleteCustomer#runLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>9976749433</td><td>Are you sure wan&apos;t to delete the selected item</td><td>Deleted successfully.</td></tr><tr><th colspan="3">Exception</th></tr><tr><td colspan="3"><div class="stacktrace">java.lang.RuntimeException: See the reporter for details.
+	at com.framework.utils.Reporter.reportStep(Reporter.java:101)
+	at com.framework.utils.Reporter.reportStep(Reporter.java:116)
+	at com.framework.selenium.api.base.SeleniumBase.locateElement(SeleniumBase.java:657)
+	at com.pos.pages.LoginPage.enterUserName(LoginPage.java:9)
+	at com.pos.pages.LoginPage.login(LoginPage.java:27)
+	at com.pos.testcases.DeleteCustomer.runLogin(DeleteCustomer.java:24)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 12 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.pos.testcases.EditCustomer#runLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>9976749433</td><td>Raman</td><td>The customer you entered was saved successfully.</td><td>Raman</td></tr><tr><th colspan="4">Exception</th></tr><tr><td colspan="4"><div class="stacktrace">java.lang.RuntimeException: See the reporter for details.
+	at com.framework.utils.Reporter.reportStep(Reporter.java:101)
+	at com.framework.utils.Reporter.reportStep(Reporter.java:116)
+	at com.framework.selenium.api.base.SeleniumBase.locateElement(SeleniumBase.java:657)
+	at com.pos.pages.LoginPage.enterUserName(LoginPage.java:9)
+	at com.pos.pages.LoginPage.login(LoginPage.java:27)
+	at com.pos.testcases.EditCustomer.runLogin(EditCustomer.java:24)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 12 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.pos.testcases.EditVendor#runLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>8220316109</td><td>Kumar</td><td>The vendor you entered was saved successfully.</td><td>Kumar</td></tr><tr><th colspan="4">Exception</th></tr><tr><td colspan="4"><div class="stacktrace">java.lang.RuntimeException: See the reporter for details.
+	at com.framework.utils.Reporter.reportStep(Reporter.java:101)
+	at com.framework.utils.Reporter.reportStep(Reporter.java:116)
+	at com.framework.selenium.api.base.SeleniumBase.locateElement(SeleniumBase.java:657)
+	at com.pos.pages.LoginPage.enterUserName(LoginPage.java:9)
+	at com.pos.pages.LoginPage.login(LoginPage.java:27)
+	at com.pos.testcases.EditVendor.runLogin(EditVendor.java:24)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 12 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
