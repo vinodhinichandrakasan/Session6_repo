@@ -18,7 +18,7 @@ public class CreateNewVendor extends ProjectSpecificMethods{
 	}
 	
 	@Test(dataProvider = "fetchData")
-	public void runLogin(
+	public void createVendor(
 			String vendorId,String vendorName,String vendorDescription
 			,String  vendorAddress,String  vendorMobile,String  vendorEmailId) {
 		new LoginPage()

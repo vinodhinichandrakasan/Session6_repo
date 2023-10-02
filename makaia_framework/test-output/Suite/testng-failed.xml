@@ -7,7 +7,7 @@
       <class name="com.pos.testcases.EditCustomer">
         <methods>
           <include name="startTestCase"/>
-          <include name="runLogin" invocation-numbers="0"/>
+          <include name="runLogin"/>
           <include name="setValues"/>
           <include name="postCondition"/>
           <include name="startReport"/>
@@ -18,7 +18,7 @@
       <class name="com.pos.testcases.DeleteCustomer">
         <methods>
           <include name="startTestCase"/>
-          <include name="runLogin" invocation-numbers="0"/>
+          <include name="runLogin"/>
           <include name="postCondition"/>
           <include name="startReport"/>
           <include name="setValues"/>
@@ -26,17 +26,77 @@
           <include name="endResult"/>
         </methods>
       </class> <!-- com.pos.testcases.DeleteCustomer -->
+      <class name="com.pos.testcases.CreateNewCustomer">
+        <methods>
+          <include name="startTestCase"/>
+          <include name="createCustomer"/>
+          <include name="postCondition"/>
+          <include name="setValues"/>
+          <include name="startReport"/>
+          <include name="preCondition"/>
+          <include name="endResult"/>
+        </methods>
+      </class> <!-- com.pos.testcases.CreateNewCustomer -->
+      <class name="com.pos.testcases.CreateNewVendor">
+        <methods>
+          <include name="startTestCase"/>
+          <include name="postCondition"/>
+          <include name="startReport"/>
+          <include name="setValues"/>
+          <include name="preCondition"/>
+          <include name="createVendor"/>
+          <include name="endResult"/>
+        </methods>
+      </class> <!-- com.pos.testcases.CreateNewVendor -->
+    </classes>
+  </test> <!-- firefox(failed) -->
+  <test thread-count="2" parallel="methods" name="chrome(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.pos.testcases.CreateNewProduct">
+        <methods>
+          <include name="startTestCase"/>
+          <include name="postCondition"/>
+          <include name="setValues"/>
+          <include name="startReport"/>
+          <include name="preCondition"/>
+          <include name="runLogin"/>
+          <include name="endResult"/>
+        </methods>
+      </class> <!-- com.pos.testcases.CreateNewProduct -->
       <class name="com.pos.testcases.EditVendor">
         <methods>
           <include name="startTestCase"/>
           <include name="postCondition"/>
           <include name="startReport"/>
-          <include name="runLogin" invocation-numbers="0"/>
+          <include name="runLogin"/>
           <include name="setValues"/>
           <include name="preCondition"/>
           <include name="endResult"/>
         </methods>
       </class> <!-- com.pos.testcases.EditVendor -->
+      <class name="com.pos.testcases.CreateNewVendor">
+        <methods>
+          <include name="startTestCase"/>
+          <include name="postCondition"/>
+          <include name="startReport"/>
+          <include name="setValues"/>
+          <include name="preCondition"/>
+          <include name="createVendor"/>
+          <include name="endResult"/>
+        </methods>
+      </class> <!-- com.pos.testcases.CreateNewVendor -->
+      <class name="com.pos.testcases.DeleteVendor">
+        <methods>
+          <include name="startTestCase"/>
+          <include name="postCondition"/>
+          <include name="runLogin"/>
+          <include name="startReport"/>
+          <include name="setValues"/>
+          <include name="preCondition"/>
+          <include name="endResult"/>
+        </methods>
+      </class> <!-- com.pos.testcases.DeleteVendor -->
     </classes>
-  </test> <!-- firefox(failed) -->
+  </test> <!-- chrome(failed) -->
 </suite> <!-- Failed suite [Suite] -->

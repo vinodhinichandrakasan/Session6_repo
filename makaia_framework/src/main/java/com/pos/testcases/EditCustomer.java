@@ -17,7 +17,7 @@ public class EditCustomer extends ProjectSpecificMethods{
 		excelFileName="EditCustomer";
 	}
 	
-	@Test(dataProvider = "fetchData")
+	@Test(dataProvider = "fetchData",dependsOnMethods={"com.pos.testcases.CreateNewCustomer.createCustomer"})
 	public void runLogin(String customerId,String customerName,String verifyEditPopup
 			,String customerNameChanged) {
 		new LoginPage()

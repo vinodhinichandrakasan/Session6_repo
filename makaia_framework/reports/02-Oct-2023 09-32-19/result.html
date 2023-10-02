@@ -1,0 +1,1462 @@
+
+<!DOCTYPE html>
+<html>
+
+
+<head>
+	<meta charset='utf-8' /> 
+	<meta name='description' content='' />
+	<meta name='robots' content='noodp, noydir' />
+	<meta name='viewport' content='width=device-width, initial-scale=1' />
+	<meta id="timeStampFormat" name="timeStampFormat" content='MMM d, yyyy hh:mm:ss a'/>
+	
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css' />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+		<link href='https://cdn.rawgit.com/anshooarora/extentreports-java/b4a58fcfd1e137bd9287244035a7c80d3d73b3af/dist/css/extent.css' type='text/css' rel='stylesheet' />
+	
+	<title>Point Of Sale</title>
+
+	<style type='text/css'>
+	</style>
+</head>
+
+	<body class='extent standard default hide-overflow '>
+		<div id='theme-selector' alt='Click to toggle theme. To enable by default, use theme configuration.' title='Click to toggle theme. To enable by default, use theme configuration.'>
+			<span><i class='material-icons'>desktop_windows</i></span>
+		</div>
+
+<nav>
+	<div class="nav-wrapper">
+		<a href="#!" class="brand-logo blue darken-3">Extent</a>
+
+		<!-- slideout menu -->
+		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
+			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
+						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
+				<li class='waves-effect'><a href='#!' view='author-view' onclick="configureView(3)"><i class='material-icons'>person</i></a></li>
+			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
+		</ul>
+
+		<!-- report name -->
+		<span class='report-name'>Point Of Sale</span>
+		
+		<!-- report headline -->
+		<span class='report-headline'></span>
+
+		<!-- nav-right -->
+		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
+			<li>
+                <a href='#!'>
+                    <span class='label suite-start-time blue darken-3'>Oct 2, 2023 09:32:19 AM</span>
+				</a>
+			</li>
+			<li>
+                <a href='#!'>
+                    <span class='label blue darken-3'>3.1.5</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+		<!-- container -->
+		<div class='container'>
+
+<div id='test-view' class='view'>
+				
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- test toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button tests-toggle' data-activates='tests-toggle' data-constrainwidth='true' data-beloworigin='true' data-hover='true' href='#'>
+					<i class='material-icons'>warning</i> Status
+				</a>
+				<ul id='tests-toggle' class='dropdown-content'>
+											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+					<li class='divider'></li>
+					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
+				</ul>
+			</div>
+			<!-- test toggle -->
+
+			<!-- category toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button category-toggle' data-activates='category-toggle' data-constrainwidth='false' data-beloworigin='true' data-hover='true' href='#'>
+					<i class='material-icons'>local_offer</i> Category
+				</a>
+				<ul id='category-toggle' class='dropdown-content'>
+					<li><a href='#'>Smoke</a></li>
+					<li class='divider'></li>
+					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
+				</ul>
+			</div>
+			<!-- category toggle -->
+
+			<!-- clear filters -->
+			<div class='chip transparent hide'>
+				<a class='' id='clear-filters' alt='Clear Filters' title='Clear Filters'>
+					<i class='material-icons'>close</i> Clear
+				</a>
+			</div>
+			<!-- clear filters -->
+
+			<!-- enable dashboard -->
+			<div id='toggle-test-view-charts' class='chip transparent'>
+				<a class='' id='enable-dashboard' alt='Enable Dashboard' title='Enable Dashboard'>
+					<i class='material-icons'>track_changes</i> Dashboard
+				</a>
+			</div>
+			<!-- enable dashboard -->
+
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+					<i class='material-icons'>search</i> Search
+				</a>
+
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+				
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+
+
+	<div class='subview-left left'>
+		
+		<div class='view-summary'>
+			<h5>Tests</h5>
+			<ul id='test-collection' class='test-collection'>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='1'>
+					<div class='test-heading'>
+						<span class='test-name'>CreateNewVendors</span>
+						<span class='test-time'>Oct 2, 2023 09:32:19 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 2, 2023 09:32:19 AM</span>
+	<span class='label end-time'>Oct 2, 2023 09:32:49 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 29s+627ms</span>
+</div>
+	<div class='test-desc'>Verify The New vendor has created </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Smoke</span>
+			</div>
+			<div class='author-list'>
+				<span class='author label white-text'>Hari</span>
+			</div>
+	</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf pass' status='pass' test-id='7'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>CreateNewVendors</h5>
+						<span class="node-time label grey lighten-1 white-text">Oct 2, 2023 09:32:49 AM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 18s+740ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:32:32 AM</td>
+													<td class='step-details'>admin username is entered successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/42059396.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/42059396.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/42059396.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:32:33 AM</td>
+													<td class='step-details'>admin password is entered successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/492614616.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/492614616.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/492614616.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:32:35 AM</td>
+													<td class='step-details'>Login Button clicked  successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/367011876.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/367011876.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/367011876.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:32:36 AM</td>
+													<td class='step-details'>Vendor menu is clicked  successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/865430950.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/865430950.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/865430950.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:32:38 AM</td>
+													<td class='step-details'>Create new Vendors clicked successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/363707440.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/363707440.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/363707440.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:32:39 AM</td>
+													<td class='step-details'>8220316109Vendor Id entered successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/685809118.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/685809118.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/685809118.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:32:40 AM</td>
+													<td class='step-details'>Vinoth VendorName entered successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/389138805.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/389138805.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/389138805.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:32:40 AM</td>
+													<td class='step-details'>Selenium VendorDescription entered successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/840002525.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/840002525.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/840002525.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:32:41 AM</td>
+													<td class='step-details'>Chennai VendorAddress entered successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/891824502.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/891824502.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/891824502.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:32:43 AM</td>
+													<td class='step-details'>8220316109 VendorMobile entered successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/839905347.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/839905347.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/839905347.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:32:45 AM</td>
+													<td class='step-details'>vinod@gmail.com Vendor EmailId entered successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/364646386.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/364646386.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/364646386.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:32:46 AM</td>
+													<td class='step-details'>Submit button clicked successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/166386370.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/166386370.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/166386370.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:32:47 AM</td>
+													<td class='step-details'>Customer menu clicked  successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/10322459.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/10322459.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/10322459.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:32:48 AM</td>
+													<td class='step-details'>8220316109 id entered  successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/255560076.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/255560076.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/255560076.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:32:48 AM</td>
+													<td class='step-details'>8220316109 Vendor Id verified  successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/489864270.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/489864270.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/489864270.jpg'></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>9:32:49 AM</td>
+													<td class='step-details'>Browser is closed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='2'>
+					<div class='test-heading'>
+						<span class='test-name'>CreateNewCutomer</span>
+						<span class='test-time'>Oct 2, 2023 09:32:19 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 2, 2023 09:32:19 AM</span>
+	<span class='label end-time'>Oct 2, 2023 09:32:49 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 29s+879ms</span>
+</div>
+	<div class='test-desc'>Verify The New customer has created </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Smoke</span>
+			</div>
+			<div class='author-list'>
+				<span class='author label white-text'>Hari</span>
+			</div>
+	</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf pass' status='pass' test-id='8'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>CreateNewCutomer</h5>
+						<span class="node-time label grey lighten-1 white-text">Oct 2, 2023 09:32:49 AM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 18s+745ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:32:32 AM</td>
+													<td class='step-details'>admin username is entered successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/897706831.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/897706831.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/897706831.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:32:33 AM</td>
+													<td class='step-details'>admin password is entered successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/796504679.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/796504679.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/796504679.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:32:34 AM</td>
+													<td class='step-details'>Login Button clicked  successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/44154551.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/44154551.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/44154551.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:32:36 AM</td>
+													<td class='step-details'>Customer menu is clicked  successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/20151445.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/20151445.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/20151445.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:32:37 AM</td>
+													<td class='step-details'>Create new Button is clicked  successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/222731073.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/222731073.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/222731073.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:32:38 AM</td>
+													<td class='step-details'>9976749433Customer Id is entered successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/515861276.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/515861276.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/515861276.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:32:39 AM</td>
+													<td class='step-details'>AravindCustomer Name is entered successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/67447195.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/67447195.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/67447195.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:32:40 AM</td>
+													<td class='step-details'>SeleniumCustomer Description is entered successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/524316223.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/524316223.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/524316223.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:32:41 AM</td>
+													<td class='step-details'>ChennaiCustomer address is entered successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/542633348.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/542633348.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/542633348.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:32:42 AM</td>
+													<td class='step-details'>9976749433Customer Mobile is entered successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/72194637.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/72194637.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/72194637.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:32:45 AM</td>
+													<td class='step-details'>aravind@gmail.comEmail Id is entered successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/565894298.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/565894298.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/565894298.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:32:46 AM</td>
+													<td class='step-details'>Submit button is clicked successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/637411728.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/637411728.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/637411728.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:32:47 AM</td>
+													<td class='step-details'>Customers menu is clicked  successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/807882985.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/807882985.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/807882985.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:32:48 AM</td>
+													<td class='step-details'>9976749433 Customer Id is entered  successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/600150577.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/600150577.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/600150577.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:32:48 AM</td>
+													<td class='step-details'>9976749433 CustomerId is verified  successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/226221482.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/226221482.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/226221482.jpg'></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>9:32:49 AM</td>
+													<td class='step-details'>Browser is closed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='3'>
+					<div class='test-heading'>
+						<span class='test-name'>CreateNewVendors</span>
+						<span class='test-time'>Oct 2, 2023 09:32:19 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 2, 2023 09:32:19 AM</span>
+	<span class='label end-time'>Oct 2, 2023 09:32:46 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 26s+200ms</span>
+</div>
+	<div class='test-desc'>Verify The New vendor has created </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Smoke</span>
+			</div>
+			<div class='author-list'>
+				<span class='author label white-text'>Hari</span>
+			</div>
+	</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf pass' status='pass' test-id='6'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>CreateNewVendors</h5>
+						<span class="node-time label grey lighten-1 white-text">Oct 2, 2023 09:32:46 AM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 18s+403ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:32:29 AM</td>
+													<td class='step-details'>admin username is entered successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/68523102.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/68523102.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/68523102.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:32:30 AM</td>
+													<td class='step-details'>admin password is entered successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/494572420.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/494572420.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/494572420.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:32:32 AM</td>
+													<td class='step-details'>Login Button clicked  successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/904340682.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/904340682.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/904340682.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:32:33 AM</td>
+													<td class='step-details'>Vendor menu is clicked  successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/552795577.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/552795577.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/552795577.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:32:34 AM</td>
+													<td class='step-details'>Create new Vendors clicked successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/82191544.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/82191544.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/82191544.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:32:36 AM</td>
+													<td class='step-details'>8220316109Vendor Id entered successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/602983247.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/602983247.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/602983247.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:32:37 AM</td>
+													<td class='step-details'>Vinoth VendorName entered successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/123928575.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/123928575.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/123928575.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:32:38 AM</td>
+													<td class='step-details'>Selenium VendorDescription entered successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/346247716.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/346247716.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/346247716.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:32:39 AM</td>
+													<td class='step-details'>Chennai VendorAddress entered successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/178491249.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/178491249.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/178491249.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:32:40 AM</td>
+													<td class='step-details'>8220316109 VendorMobile entered successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/816579508.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/816579508.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/816579508.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:32:41 AM</td>
+													<td class='step-details'>vinod@gmail.com Vendor EmailId entered successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/15572114.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/15572114.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/15572114.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:32:42 AM</td>
+													<td class='step-details'>Submit button clicked successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/531752801.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/531752801.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/531752801.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:32:45 AM</td>
+													<td class='step-details'>Customer menu clicked  successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/788533947.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/788533947.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/788533947.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:32:45 AM</td>
+													<td class='step-details'>8220316109 id entered  successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/861267794.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/861267794.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/861267794.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:32:45 AM</td>
+													<td class='step-details'>8220316109 Vendor Id verified  successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/98850511.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/98850511.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/98850511.jpg'></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>9:32:46 AM</td>
+													<td class='step-details'>Browser is closed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf fail' status='fail' bdd='false' test-id='4'>
+					<div class='test-heading'>
+						<span class='test-name'>CreateNewProduct</span>
+						<span class='test-time'>Oct 2, 2023 09:32:19 AM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 2, 2023 09:32:19 AM</span>
+	<span class='label end-time'>Oct 2, 2023 09:32:50 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 30s+464ms</span>
+</div>
+	<div class='test-desc'>Verify The New product has created </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Smoke</span>
+			</div>
+			<div class='author-list'>
+				<span class='author label white-text'>Hari</span>
+			</div>
+	</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf fail' status='fail' test-id='5'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>CreateNewProduct</h5>
+						<span class="node-time label grey lighten-1 white-text">Oct 2, 2023 09:32:50 AM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 22s+732ms</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:32:28 AM</td>
+													<td class='step-details'>admin username is entered successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/774054516.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/774054516.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/774054516.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:32:30 AM</td>
+													<td class='step-details'>admin password is entered successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/93951867.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/93951867.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/93951867.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:32:31 AM</td>
+													<td class='step-details'>Login Button clicked  successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/438658015.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/438658015.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/438658015.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:32:33 AM</td>
+													<td class='step-details'>Product menu is clicked  successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/289674123.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/289674123.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/289674123.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:32:34 AM</td>
+													<td class='step-details'>Create new Vendors clicked successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/108397287.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/108397287.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/108397287.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:32:35 AM</td>
+													<td class='step-details'>8526544557 Product Id entered successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/14986579.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/14986579.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/14986579.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:32:36 AM</td>
+													<td class='step-details'>Playwright Product name entered successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/70581143.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/70581143.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/70581143.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:32:38 AM</td>
+													<td class='step-details'>VendorDescription entered successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/196806849.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/196806849.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/196806849.jpg'></td>
+												</tr>
+												<tr class='log' status='fail'>
+													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+													<td class='timestamp'>9:32:50 AM</td>
+													<td class='step-details'>The Element  could not be clicked due to:stale element reference: stale element not found
+  (Session info: chrome=117.0.5938.92)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [a0ecfb7895d0dc9762192209d26a9240, clickElement {id=DA76652A8F9C636E23F3B1B94475CCED_element_48}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.92, chrome: {chromedriverVersion: 117.0.5938.92 (67649b10b92b..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:38633}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.19.0.3:4444/sessio..., se:cdpVersion: 117.0.5938.92, se:vnc: ws://172.19.0.3:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.19.0.3:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[RemoteWebDriver: chrome on linux (a0ecfb7895d0dc9762192209d26a9240)] -> xpath: //div[text()='stat']]
+Session ID: a0ecfb7895d0dc9762192209d26a9240<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/94996763.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/94996763.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/94996763.jpg'></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>9:32:50 AM</td>
+													<td class='step-details'>Browser is closed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf fail' status='fail' bdd='false' test-id='9'>
+					<div class='test-heading'>
+						<span class='test-name'>EditVendors</span>
+						<span class='test-time'>Oct 2, 2023 09:32:46 AM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 2, 2023 09:32:46 AM</span>
+	<span class='label end-time'>Oct 2, 2023 09:33:45 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 59s+792ms</span>
+</div>
+	<div class='test-desc'>Verify The New vendor name has updated </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Smoke</span>
+			</div>
+			<div class='author-list'>
+				<span class='author label white-text'>Hari</span>
+			</div>
+	</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf fail' status='fail' test-id='13'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>EditVendors</h5>
+						<span class="node-time label grey lighten-1 white-text">Oct 2, 2023 09:33:45 AM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 27s+137ms</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:33:20 AM</td>
+													<td class='step-details'>admin username is entered successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/896138415.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/896138415.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/896138415.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:33:22 AM</td>
+													<td class='step-details'>admin password is entered successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/590383063.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/590383063.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/590383063.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:33:23 AM</td>
+													<td class='step-details'>Login Button clicked  successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/524325492.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/524325492.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/524325492.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:33:25 AM</td>
+													<td class='step-details'>Vendor menu is clicked  successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/366035562.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/366035562.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/366035562.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:33:25 AM</td>
+													<td class='step-details'>8220316109 id entered  successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/865927838.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/865927838.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/865927838.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:33:27 AM</td>
+													<td class='step-details'>Vendor Edit icon clicked  successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/125532733.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/125532733.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/125532733.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:33:31 AM</td>
+													<td class='step-details'>Kumar Vendor name changed  successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/754251048.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/754251048.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/754251048.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:33:33 AM</td>
+													<td class='step-details'>Submit button clicked successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/511212063.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/511212063.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/511212063.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:33:33 AM</td>
+													<td class='step-details'>The vendor you entered was saved successfully. Edit Vendor popup was displayed  successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/548700332.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/548700332.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/548700332.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:33:34 AM</td>
+													<td class='step-details'>Ok button clicked successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/54195171.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/54195171.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/54195171.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:33:35 AM</td>
+													<td class='step-details'>8220316109 id entered  successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/859869788.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/859869788.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/859869788.jpg'></td>
+												</tr>
+												<tr class='log' status='fail'>
+													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+													<td class='timestamp'>9:33:45 AM</td>
+													<td class='step-details'>The Element with locator:XPATH Not Found with value: //td[text()='8220316109']/following-sibling::td
+no such element: Unable to locate element: {"method":"xpath","selector":"//td[text()='8220316109']/following-sibling::td"}
+  (Session info: chrome=117.0.5938.92)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [ea0c09b7f8224f87d58808d833f1fc22, findElement {using=xpath, value=//td[text()='8220316109']/following-sibling::td}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.92, chrome: {chromedriverVersion: 117.0.5938.92 (67649b10b92b..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:40641}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.19.0.3:4444/sessio..., se:cdpVersion: 117.0.5938.92, se:vnc: ws://172.19.0.3:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.19.0.3:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ea0c09b7f8224f87d58808d833f1fc22<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/99827002.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/99827002.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/99827002.jpg'></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>9:33:45 AM</td>
+													<td class='step-details'>Browser is closed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='10'>
+					<div class='test-heading'>
+						<span class='test-name'>EditCutomer</span>
+						<span class='test-time'>Oct 2, 2023 09:32:49 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 2, 2023 09:32:49 AM</span>
+	<span class='label end-time'>Oct 2, 2023 09:33:34 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 45s+187ms</span>
+</div>
+	<div class='test-desc'>Verify The New customer name has updated </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Smoke</span>
+			</div>
+			<div class='author-list'>
+				<span class='author label white-text'>Hari</span>
+			</div>
+	</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf pass' status='pass' test-id='15'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>EditCutomer</h5>
+						<span class="node-time label grey lighten-1 white-text">Oct 2, 2023 09:33:34 AM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 12s+751ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:33:23 AM</td>
+													<td class='step-details'>admin username is entered successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/223859500.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/223859500.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/223859500.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:33:24 AM</td>
+													<td class='step-details'>admin password is entered successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/681131218.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/681131218.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/681131218.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:33:26 AM</td>
+													<td class='step-details'>Login Button clicked  successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/742427113.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/742427113.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/742427113.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:33:27 AM</td>
+													<td class='step-details'>Customer menu is clicked  successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/43654726.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/43654726.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/43654726.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:33:28 AM</td>
+													<td class='step-details'>94898832 Customer Id is entered  successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/295486387.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/295486387.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/295486387.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:33:29 AM</td>
+													<td class='step-details'>Edit icon is clicked  successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/238192961.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/238192961.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/238192961.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:33:30 AM</td>
+													<td class='step-details'>Raman Customer name is changed  successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/250779760.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/250779760.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/250779760.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:33:31 AM</td>
+													<td class='step-details'>Submit button clicked successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/332197013.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/332197013.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/332197013.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:33:32 AM</td>
+													<td class='step-details'>The customer you entered was saved successfully. Edit popup is displayed successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/899642838.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/899642838.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/899642838.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:33:33 AM</td>
+													<td class='step-details'>Ok button is clicked successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/742802458.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/742802458.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/742802458.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:33:33 AM</td>
+													<td class='step-details'>94898832 Customer Id is entered  successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/378454146.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/378454146.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/378454146.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:33:34 AM</td>
+													<td class='step-details'>Raman Customer name is changed successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/460633122.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/460633122.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/460633122.jpg'></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>9:33:34 AM</td>
+													<td class='step-details'>Browser is closed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='11'>
+					<div class='test-heading'>
+						<span class='test-name'>DeleteCutomer</span>
+						<span class='test-time'>Oct 2, 2023 09:32:49 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 2, 2023 09:32:49 AM</span>
+	<span class='label end-time'>Oct 2, 2023 09:33:44 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 54s+536ms</span>
+</div>
+	<div class='test-desc'>Customer deleted successfully </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Smoke</span>
+			</div>
+			<div class='author-list'>
+				<span class='author label white-text'>Hari</span>
+			</div>
+	</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf pass' status='pass' test-id='16'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>DeleteCutomer</h5>
+						<span class="node-time label grey lighten-1 white-text">Oct 2, 2023 09:33:44 AM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 21s+515ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:33:23 AM</td>
+													<td class='step-details'>admin username is entered successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/381575494.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/381575494.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/381575494.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:33:24 AM</td>
+													<td class='step-details'>admin password is entered successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/618934406.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/618934406.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/618934406.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:33:25 AM</td>
+													<td class='step-details'>Login Button clicked  successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/41073429.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/41073429.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/41073429.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:33:27 AM</td>
+													<td class='step-details'>Customer menu is clicked  successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/622084924.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/622084924.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/622084924.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:33:27 AM</td>
+													<td class='step-details'>9976749433 Customer Id is entered  successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/190749501.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/190749501.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/190749501.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:33:29 AM</td>
+													<td class='step-details'>Delete icon is clicked  successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/392070577.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/392070577.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/392070577.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:33:30 AM</td>
+													<td class='step-details'>Ok button is clicked successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/58224539.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/58224539.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/58224539.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:33:33 AM</td>
+													<td class='step-details'>9976749433 Customer Id to be deleted is entered successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/518987742.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/518987742.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/518987742.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:33:43 AM</td>
+													<td class='step-details'>Customer is deleted successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/760290508.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/760290508.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/760290508.jpg'></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>9:33:44 AM</td>
+													<td class='step-details'>Browser is closed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='12'>
+					<div class='test-heading'>
+						<span class='test-name'>DeleteVendor</span>
+						<span class='test-time'>Oct 2, 2023 09:32:50 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 2, 2023 09:32:50 AM</span>
+	<span class='label end-time'>Oct 2, 2023 09:33:38 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 48s+305ms</span>
+</div>
+	<div class='test-desc'>Delete vendor and verify </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Smoke</span>
+			</div>
+			<div class='author-list'>
+				<span class='author label white-text'>Hari</span>
+			</div>
+	</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf pass' status='pass' test-id='14'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>DeleteVendor</h5>
+						<span class="node-time label grey lighten-1 white-text">Oct 2, 2023 09:33:38 AM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 19s+864ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:33:20 AM</td>
+													<td class='step-details'>admin username is entered successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/707260278.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/707260278.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/707260278.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:33:21 AM</td>
+													<td class='step-details'>admin password is entered successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/53719781.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/53719781.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/53719781.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:33:23 AM</td>
+													<td class='step-details'>Login Button clicked  successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/830392674.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/830392674.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/830392674.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:33:24 AM</td>
+													<td class='step-details'>Vendor menu is clicked  successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/776600281.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/776600281.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/776600281.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:33:25 AM</td>
+													<td class='step-details'>8220316109 id entered  successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/472585205.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/472585205.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/472585205.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:33:26 AM</td>
+													<td class='step-details'>Vendor Delete icon clicked  successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/672869280.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/672869280.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/672869280.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:33:27 AM</td>
+													<td class='step-details'>Ok button clicked successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/777349240.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/777349240.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/777349240.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:33:28 AM</td>
+													<td class='step-details'>8220316109 id entered  successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/122010495.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/122010495.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/122010495.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:33:38 AM</td>
+													<td class='step-details'>Vendor is deleted  successfully<img data-featherlight='./../../reports/02-Oct-2023 09-32-19/images/159048989.jpg' width='10%' src='./../../reports/02-Oct-2023 09-32-19/images/159048989.jpg' data-src='./../../reports/02-Oct-2023 09-32-19/images/159048989.jpg'></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>9:33:38 AM</td>
+													<td class='step-details'>Browser is closed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- subview left -->
+
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='test-name'></h5>
+
+			<div id='step-filters' class="right">
+				<span class="blue-text" status="info" alt="info" title="info"><i class="material-icons">info_outline</i></span>
+				<span class="green-text" status="pass" alt="pass" title="pass"><i class="material-icons">check_circle</i></span>
+				<span class="red-text" status="fail" alt="fail" title="fail"><i class="material-icons">cancel</i></span>
+				<span class="red-text text-darken-4" status="fatal" alt="fatal" title="fatal"><i class="material-icons">cancel</i></span>
+				<span class="pink-text text-lighten-1" status="error" alt="error" title="error"><i class="material-icons">error</i></span>
+				<span class="orange-text" alt="warning" status="warning" title="warning"><i class="material-icons">warning</i></span>
+				<span class="teal-text" status="skip" alt="skip" title="skip"><i class="material-icons">redo</i></span>
+				<span status="clear" alt="Clear filters" title="Clear filters"><i class="material-icons">clear</i></span>
+			</div>
+		</div>
+	</div>
+	<!-- subview right -->
+
+
+<div id='test-view-charts' class='subview-full'>
+	<div id='charts-row' class='row nm-v nm-h'>
+		<div class='col s12 m6 l6 np-h'>
+			<div class='card-panel nm-v'>
+				<div class='left panel-name'>Tests</div>
+				<div class='chart-box'>
+					<canvas id='parent-analysis' width='100' height='80'></canvas>
+				</div>
+				<div class='block text-small'>
+					<span class='tooltipped' data-position='top' data-tooltip='75%'><span class='strong'>6</span> test(s) passed</span>
+				</div>
+				<div class='block text-small'>
+					<span class='strong tooltipped' data-position='top' data-tooltip='25%'>2</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+				</div>
+			</div>
+		</div>
+		
+		<div class='col s12 m6 l6 np-h'>
+			<div class='card-panel nm-v'>
+				<div class='left panel-name'>Steps</div>
+				<div class='chart-box'>
+					<canvas id='child-analysis' width='100' height='80'></canvas>
+				</div>
+				<div class='block text-small'>
+					<span class='tooltipped' data-position='top' data-tooltip='90.385%'><span class='strong'>94</span> step(s) passed</span>
+				</div>
+				<div class='block text-small'>
+					<span class='strong tooltipped' data-position='top' data-tooltip='1.923%'>2</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='7.692%'>8</span> others
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</div>
+</div>
+<!-- test view -->
+<div id='category-view' class='view hide'>
+
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+					<i class='material-icons'>search</i> Search
+				</a>
+				
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+				
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+
+	<div class='subview-left left'>
+		
+		<div class='view-summary'>
+			<h5>Categories</h3>
+			<ul id='category-collection' class='category-collection'>
+				
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>Smoke</span>
+						<span class='category-status right'>
+							<span class='label pass'>6</span>
+							<span class='label fail'>2</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 6</span>
+							<span class='label red lighten-1 white-text'>Failed: 2</span>
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Oct 2, 2023 09:32:19 AM</td>
+										<td class='linked' test-id='1'>CreateNewVendors</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 2, 2023 09:32:19 AM</td>
+										<td class='linked' test-id='2'>CreateNewCutomer</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 2, 2023 09:32:19 AM</td>
+										<td class='linked' test-id='3'>CreateNewVendors</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 2, 2023 09:32:19 AM</td>
+										<td class='linked' test-id='4'>CreateNewProduct</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Oct 2, 2023 09:32:46 AM</td>
+										<td class='linked' test-id='9'>EditVendors</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Oct 2, 2023 09:32:49 AM</td>
+										<td class='linked' test-id='10'>EditCutomer</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 2, 2023 09:32:49 AM</td>
+										<td class='linked' test-id='11'>DeleteCutomer</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 2, 2023 09:32:50 AM</td>
+										<td class='linked' test-id='12'>DeleteVendor</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+
+			</ul>
+		</div>
+	</div>
+
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='category-name'></h5>
+		</div>
+	</div>
+</div>
+<!-- category view -->
+<div id='author-view' class='view hide'>
+    <section id='controls'>
+        <div class='controls grey lighten-4'>
+            <!-- search -->
+            <div class='chip transparent' alt='Search Authors' title='Search Authors'>
+                <a href="#" class='search-div'>
+                    <i class='material-icons'>search</i> Search
+                </a>
+
+                <div class='input-field left hide'>
+                    <input id='search-tests' type='text' class='validate browser-default' placeholder='Search Authors...'>
+                </div>
+
+            </div>
+            <!-- search -->
+        </div>
+    </section>
+
+    <div class='subview-left left'>
+
+        <div class='view-summary'>
+            <h5>Authors</h5>
+                <ul id='author-collection' class='author-collection'>
+
+                        <li class='author displayed active'>
+                            <div class='author-heading'>
+                                <span class='author-name'>Hari</span>
+                                <span class='author-status right'>
+                                        <span class='label pass'>6</span>
+                                        <span class='label fail'>2</span>
+						        </span>
+                            </div>
+                            <div class='author-content hide'>
+                                <div class='author-status-counts'>
+                                    <span class='label green accent-4 white-text'>Passed: 6</span>
+                                    <span class='label red lighten-1 white-text'>Failed: 2</span>
+                                    
+                                </div>
+
+                                <div class='author-tests'>
+                                    <table class='bordered table-results'>
+                                        <thead>
+                                        <tr>
+                                            <th>Timestamp</th>
+                                            <th>TestName</th>
+                                            <th>Status</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Oct 2, 2023 09:32:19 AM</td>
+                                                <td class='linked' test-id='1'>CreateNewVendors</td>
+                                                <td><span class='test-status pass'>pass</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Oct 2, 2023 09:32:19 AM</td>
+                                                <td class='linked' test-id='2'>CreateNewCutomer</td>
+                                                <td><span class='test-status pass'>pass</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Oct 2, 2023 09:32:19 AM</td>
+                                                <td class='linked' test-id='3'>CreateNewVendors</td>
+                                                <td><span class='test-status pass'>pass</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Oct 2, 2023 09:32:19 AM</td>
+                                                <td class='linked' test-id='4'>CreateNewProduct</td>
+                                                <td><span class='test-status fail'>fail</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Oct 2, 2023 09:32:46 AM</td>
+                                                <td class='linked' test-id='9'>EditVendors</td>
+                                                <td><span class='test-status fail'>fail</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Oct 2, 2023 09:32:49 AM</td>
+                                                <td class='linked' test-id='10'>EditCutomer</td>
+                                                <td><span class='test-status pass'>pass</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Oct 2, 2023 09:32:49 AM</td>
+                                                <td class='linked' test-id='11'>DeleteCutomer</td>
+                                                <td><span class='test-status pass'>pass</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Oct 2, 2023 09:32:50 AM</td>
+                                                <td class='linked' test-id='12'>DeleteVendor</td>
+                                                <td><span class='test-status pass'>pass</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+
+                </ul>
+        </div>
+    </div>
+
+    <div class='subview-right left'>
+        <div class='view-summary'>
+            <h5 class='author-name'></h5>
+        </div>
+    </div>
+</div>
+<!-- exception view -->
+<div id='dashboard-view' class='view hide'>
+	<div class='card-panel transparent np-v'>
+		<h5>Dashboard</h5>
+
+		<div class='row'>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Tests
+					<div class='panel-lead'>8</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Steps
+					<div class='panel-lead'>104</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Start
+					<div class='panel-lead'>Oct 2, 2023 09:32:19 AM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+			 		End
+			 		<div class='panel-lead'>Oct 2, 2023 09:33:45 AM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Time Taken
+					<div class='panel-lead'>0h 1m 26s+288ms</div>
+				</div>
+			</div>
+			<div class='col s6'>
+				<div class='card-panel dashboard-categories'>
+					<span class='right label cyan white-text'>Categories</span><p>&nbsp;</p>
+					
+					<table>
+						<tr>
+							<th>Name</th>
+							<th>Passed</th>
+							<th>Failed</th>
+							<th>Others</th>
+							<th>Passed %</th>
+						</tr>
+						<tr>
+							<td>Smoke</td>
+							<td>6</td>
+							<td>2</td>
+							<td>0</td>
+							<td>
+									75%
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- dashboard view -->
+<!-- testrunner-logs view -->
+		</div>
+		<!-- container -->
+
+		<script>
+			var statusGroup = {
+				passParent: 6,
+				failParent: 2,
+				fatalParent: 0,
+				errorParent: 0,
+				warningParent: 0,
+				skipParent: 0,
+				exceptionsParent: 2,
+				
+				passChild: 94,
+				failChild: 2,
+				fatalChild: 0,
+				errorChild: 0,
+				warningChild: 0,
+				skipChild: 0,
+				infoChild: 8,
+				exceptionsChild: 2,
+				
+				passGrandChild: 0,
+				failGrandChild: 0,
+				fatalGrandChild: 0,
+				errorGrandChild: 0,
+				warningGrandChild: 0,
+				skipGrandChild: 0,
+				infoGrandChild: 0,
+				exceptionsGrandChild: 0,
+			};
+		</script>
+		
+			<script src='https://cdn.rawgit.com/anshooarora/extentreports-java/fca20fb7653aade98810546ab96a2a4360e3e712/dist/js/extent.js' type='text/javascript'></script>
+		
+		<script type='text/javascript'>
+			$(document).ready(function() {
+				$('#test-view-charts').addClass('hide');
+			});
+		</script>
+		
+ 		<script type='text/javascript'>
+ 		</script>
+	</body>
+	
+</html>

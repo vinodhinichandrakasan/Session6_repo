@@ -18,10 +18,11 @@
 	<test name="firefox" parallel="true" thread-count="2">
 	<parameter name="browser" value="firefox"></parameter>
 		<classes>
+			<class name="com.pos.testcases.CreateNewCustomer" />
 			<class name="com.pos.testcases.EditCustomer" />
 			<class name="com.pos.testcases.DeleteCustomer" />
 			<class name="com.pos.testcases.CreateNewVendor" />
-			<class name="com.pos.testcases.EditVendor" />
+		
 			
 		</classes>
 	</test>

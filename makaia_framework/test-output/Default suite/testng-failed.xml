@@ -3,17 +3,28 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.pos.testcases.EditCustomer">
+      <class name="com.pos.testcases.CreateNewVendor">
         <methods>
           <include name="startTestCase"/>
-          <include name="runLogin"/>
-          <include name="setValues"/>
           <include name="postCondition"/>
           <include name="startReport"/>
+          <include name="setValues"/>
+          <include name="preCondition"/>
+          <include name="createVendor"/>
+          <include name="endResult"/>
+        </methods>
+      </class> <!-- com.pos.testcases.CreateNewVendor -->
+      <class name="com.pos.testcases.EditVendor">
+        <methods>
+          <include name="startTestCase"/>
+          <include name="postCondition"/>
+          <include name="startReport"/>
+          <include name="runLogin"/>
+          <include name="setValues"/>
           <include name="preCondition"/>
           <include name="endResult"/>
         </methods>
-      </class> <!-- com.pos.testcases.EditCustomer -->
+      </class> <!-- com.pos.testcases.EditVendor -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
